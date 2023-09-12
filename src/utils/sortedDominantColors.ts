@@ -1,7 +1,8 @@
-import { Swatch } from 'node-vibrant/lib/color'
+import { ColorModel } from '@/models/ColorModel'
 
-export default function sortedDominantColors(dominantColor: Swatch[]) {
-	const sortedColors = dominantColor.sort((a: Swatch, b: Swatch) => {
+export default function sortedDominantColors(dominantColor: ColorModel[]) {
+	console.log(dominantColor)
+	const sortedColors = dominantColor.sort((a: ColorModel, b: ColorModel) => {
 		if (a.population > b.population) return -1
 		if (a.population < b.population) return 1
 		return 0
