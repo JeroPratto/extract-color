@@ -63,6 +63,7 @@ image.onload = () => {
 	margin: 0 auto;
 }
 .btnClear {
+	cursor: pointer;
 	position: absolute;
 	top: -20px;
 	left: 0;
